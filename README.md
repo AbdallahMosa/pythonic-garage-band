@@ -1,4 +1,4 @@
-# LAB - Class 6
+# LAB - Class 5
 ## Project: Classes & Fixtures
 
 ### Author: AbdallahMosa
