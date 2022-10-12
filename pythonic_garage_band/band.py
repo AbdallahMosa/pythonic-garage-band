@@ -31,10 +31,12 @@ class Band():
 
 
 class Musician(ABC):
-    members=[]
+    '''
+    Base Class
+    '''
+  
     def __init__(self, name):
         self.name = name
-        self.__class__.members.append(self)
 
     def __str__(self) :
         pass
@@ -50,6 +52,9 @@ class Musician(ABC):
 
 
 class Guitarist(Musician):
+    '''
+    Child Class
+    '''
     def __init__(self, name):
         self.name = name
         super().__init__(name)
@@ -62,6 +67,10 @@ class Guitarist(Musician):
     def get_instrument(self):
         return "guitar"
 class Drummer(Musician):
+
+    '''
+    Child Class
+    '''
     def __init__(self, name):
         super().__init__(name)
 
@@ -76,6 +85,9 @@ class Drummer(Musician):
         return "drums"
 
 class Bassist(Musician):
+    '''
+    Child Class
+    '''
     def __init__(self, name):
         super().__init__(name)
     def __str__(self):
